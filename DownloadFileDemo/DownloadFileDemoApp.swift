@@ -11,7 +11,13 @@ import SwiftUI
 struct DownloadFileDemoApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(
+                openFileHandler: FileDownloadToMacOSAppsOpenAdapter(
+                    httpClient: URLSessionHTTPClient(session: URLSession(configuration: .ephemeral)),
+                    workspace: NSWorkspace.shared,
+                    appBundleId: MacOSAppBundleId.preview
+                )
+            )
         }
     }
 }

@@ -11,6 +11,8 @@
 		92E30D72284E25BE00CD57FC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E30D71284E25BE00CD57FC /* ContentView.swift */; };
 		92E30D74284E25BF00CD57FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92E30D73284E25BF00CD57FC /* Assets.xcassets */; };
 		92E30D77284E25BF00CD57FC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92E30D76284E25BF00CD57FC /* Preview Assets.xcassets */; };
+		92E30D82284E2A2A00CD57FC /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E30D81284E2A2A00CD57FC /* HTTPClient.swift */; };
+		92E30D84284E2A4300CD57FC /* FileDownloadToMacOSAppsOpenAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E30D83284E2A4300CD57FC /* FileDownloadToMacOSAppsOpenAdapter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,9 @@
 		92E30D73284E25BF00CD57FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92E30D76284E25BF00CD57FC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		92E30D78284E25BF00CD57FC /* DownloadFileDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DownloadFileDemo.entitlements; sourceTree = "<group>"; };
+		92E30D80284E291E00CD57FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		92E30D81284E2A2A00CD57FC /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		92E30D83284E2A4300CD57FC /* FileDownloadToMacOSAppsOpenAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileDownloadToMacOSAppsOpenAdapter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,11 +57,14 @@
 		92E30D6E284E25BE00CD57FC /* DownloadFileDemo */ = {
 			isa = PBXGroup;
 			children = (
+				92E30D80284E291E00CD57FC /* Info.plist */,
 				92E30D6F284E25BE00CD57FC /* DownloadFileDemoApp.swift */,
 				92E30D71284E25BE00CD57FC /* ContentView.swift */,
 				92E30D73284E25BF00CD57FC /* Assets.xcassets */,
 				92E30D78284E25BF00CD57FC /* DownloadFileDemo.entitlements */,
 				92E30D75284E25BF00CD57FC /* Preview Content */,
+				92E30D81284E2A2A00CD57FC /* HTTPClient.swift */,
+				92E30D83284E2A4300CD57FC /* FileDownloadToMacOSAppsOpenAdapter.swift */,
 			);
 			path = DownloadFileDemo;
 			sourceTree = "<group>";
@@ -139,8 +147,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92E30D84284E2A4300CD57FC /* FileDownloadToMacOSAppsOpenAdapter.swift in Sources */,
 				92E30D72284E25BE00CD57FC /* ContentView.swift in Sources */,
 				92E30D70284E25BE00CD57FC /* DownloadFileDemoApp.swift in Sources */,
+				92E30D82284E2A2A00CD57FC /* HTTPClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +282,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"DownloadFileDemo/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DownloadFileDemo/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -297,6 +308,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"DownloadFileDemo/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DownloadFileDemo/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
